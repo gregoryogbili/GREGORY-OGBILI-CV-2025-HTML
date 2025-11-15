@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gregory Ogbili | AI & IT Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --card-bg: #ffffff;
+      --text: #222222;
+      --muted: #777777;
+      --border: #e3e3e3;
+      --accent: #111111;
+      --radius: 10px;
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      --max-width: 960px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px 16px 40px;
+    }
+
+    .page { max-width: var(--max-width); margin: 0 auto; }
+
+    header {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    .top-row {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    @media (min-width: 720px) {
+      .top-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+
+    .name-block h1 {
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .name-block h2 {
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .contact { font-size: 0.9rem; color: var(--muted); }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .contact a:hover { border-bottom-color: var(--accent); }
+
+    .tagline {
+      margin-top: 16px;
+      font-size: 0.95rem;
+      max-width: 680px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    @media (min-width: 900px) {
+      main {
+        grid-template-columns: 3fr 2fr;
+      }
+    }
+
+    section {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    h3.section-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .exp-item { margin-bottom: 14px; }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .exp-company { font-size: 0.9rem; color: var(--muted); }
+
+    ul { list-style: none; padding-left: 0; }
+    ul li {
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      top: 0;
+      color: var(--muted);
+    }
+
+    .project { margin-bottom: 12px; }
+    .project-title { font-weight: 600; }
+    .project-tags { font-size: 0.8rem; color: var(--muted); }
+
+    .skill-grid {
+      display: grid;
+      gap: 12px;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 720px) {
+      .skill-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .skill-group-title { font-weight: 600; }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+<header>
+  <div class="top-row">
+    <div class="name-block">
+      <h1>GREGORY OGBILI</h1>
+      <h2>AI • DATA • PRODUCT • IT • DEVOPS</h2>
+    </div>
+    <div class="contact">
+      Birmingham, United Kingdom<br />
+      <a href="mailto:gregory.ogbili@gmail.com">gregory.ogbili@gmail.com</a><br />
+      +44 (0)7398 805684
+    </div>
+  </div>
+  <p class="tagline">
+    AI & IT professional with 13+ years’ experience building scalable products,
+    AI systems, data pipelines, deployment workflows, and intelligent automation.
+  </p>
+</header>
+
+<main>
+  <!-- LEFT SIDE -->
+  <div>
+
+    <section id="about">
+      <h3 class="section-title">About</h3>
+      <p>
+        I build practical AI-powered solutions across web, mobile, and backend systems.
+        I specialise in turning ideas into functional prototypes and fully deployed products.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h3 class="section-title">Experience</h3>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span>Product Developer & AI Engineer</span>
+          <span class="exp-meta">Apr 2024 – Present</span>
+        </div>
+        <div class="exp-company">GENŌ INTELLIGENTIA LIMITED – United Kingdom</div>
+        <ul>
+          <li>Developed AI-powered applications including HitchMate (AI dating & relationship system).</li>
+          <li>Integrated OpenAI, Hugging Face, and local LLMs via Ollama.</li>
+          <li>Built WordPress websites, dashboards, and backend automation.</li>
+          <li>Designed machine-learning prototypes with Python, R, scikit-learn.</li>
+          <li>Managed deployments using Docker, Render, and Vercel.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span>Project Officer II / Assistant Contractor Manager</span>
+          <span class="exp-meta">Dec 2014 – Dec 2022</span>
+        </div>
+        <div class="exp-company">NetcoDietsmann – France</div>
+        <ul>
+          <li>Managed procurement, financial reporting, workforce planning, and contractor oversight.</li>
+          <li>Worked with TotalEnergies on service quality and compliance.</li>
+          <li>Improved internal operations and introduced efficiency systems.</li>
+        </ul>
+      </div>
+
+      <!-- REMOVED NECA AND ETISALAT SECTIONS -->
+    </section>
+
+    <section id="projects">
+      <h3 class="section-title">Selected Projects</h3>
+
+      <div class="project">
+        <div class="project-title">Hitch-Mate — AI Matchmaking & Relationship Assistant</div>
+        <div class="project-tags">Next.js · OpenAI · Docker · Vercel · PostgreSQL</div>
+        <p>An AI-first dating experience with blind-matchmaking and personalised AI guidance.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-title">AI Helpdesk Assistant</div>
+        <div class="project-tags">OpenAI · n8n · WordPress integration</div>
+        <p>Prototype that triages IT questions, retrieves knowledge-base answers, and escalates tickets.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Retail Security AI MVP</div>
+        <div class="project-tags">Vision + Audio ML · Python</div>
+        <p>Early-stage concept for real-time theft detection and behaviour monitoring in retail stores.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div>
+    <section id="skills">
+      <h3 class="section-title">Skills</h3>
+      <div class="skill-grid">
+        <div>
+          <div class="skill-group-title">AI & Machine Learning</div>
+          <div class="muted">LLMs, scikit-learn, Hugging Face, OpenAI, TensorFlow basics</div>
+        </div>
+        <div>
+          <div class="skill-group-title">Programming & Data</div>
+          <div class="muted">Python, R, SQL, ggplot2, Matplotlib, Quarto</div>
+        </div>
+        <div>
+          <div class="skill-group-title">Web Development</div>
+          <div class="muted">WordPress, HTML, CSS, API integration</div>
+        </div>
+        <div>
+          <div class="skill-group-title">DevOps</div>
+          <div class="muted">Docker, GitHub, Vercel, Render, environment setup</div>
+        </div>
+        <div>
+          <div class="skill-group-title">Product & Delivery</div>
+          <div class="muted">Agile, Scrum, requirements, documentation</div>
+        </div>
+        <div>
+          <div class="skill-group-title">Tools</div>
+          <div class="muted">VS Code, Jupyter, RStudio, Canva</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h3 class="section-title">Education & Certifications</h3>
+      <p><b>MSc Artificial Intelligence</b> (In Progress)<br>
+         <span class="muted">University of Wolverhampton</span>
+      </p>
+      <p><b>B.Sc. Sociology</b><br>
+         <span class="muted">Ahmadu Bello University</span>
+      </p>
+      <p><b>Certified Scrum Master</b> – 2024</p>
+      <p><b>Project Management</b> – Reed Learning</p>
+      <p><b>Procurement & Supply Chain Certifications</b></p>
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Gregory Ogbili — Portfolio
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</div>
+</body>
+</html>
